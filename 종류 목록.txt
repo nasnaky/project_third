@@ -1,0 +1,6 @@
+Denim			청   10 
+Pants_Shorts		반바지 10
+Dresses			드레스 
+Sweatshirts		후드티,긴티 10
+Shoes			신발 10
+Tops&Shirts		t 셔츠 10
