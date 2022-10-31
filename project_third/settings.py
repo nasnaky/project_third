@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = get_secret("SECRET_KEY")
+SECRET_KEY = 'asdfasfasfwefihksdbvnroejglnadhbflkqhwljhfw'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = (os.environ.get('DEBUG', 'True') != 'False')
@@ -44,7 +44,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
-	'corsheaders.middleware.CorsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -150,5 +150,4 @@ CORS_ALLOW_HEADERS = [
 ]
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MEDIA_URL = 'media/'
-
+MEDIA_URL = 'http://10.120.74.35:8001/media/'

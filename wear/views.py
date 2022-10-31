@@ -3,12 +3,11 @@ from rest_framework import status, viewsets
 from rest_framework.parsers import JSONParser
 from django.db.models import Q
 from datetime import date, timedelta
-from django.views.decorators.csrf import csrf_exempt
 from rest_framework.decorators import api_view
 
 import hashlib
 
-from .models import User, buy, Basket_buy, Basket, Product, Check_Product, buyReady
+from .models import User, Basket_buy, Basket, Product, Check_Product, buyReady
 
 from .serializers import UserCreateSerializer, UserUpdateSerializer, ProductDetailSerializer, \
     ProductListSerializer, Check_ProductUPSerializer, Check_ProductListSeral, BaskerUPSerializer, BaskerListSerializer, \
